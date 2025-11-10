@@ -6,9 +6,22 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-orange: #FF3C00;
+    --color-dark: #07101D;
+    --color-white: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: kalameh;
+    background-color: var(--color-dark);
 }
+
+/* Fonts */
 
 @font-face {
     font-family: kalameh;
@@ -29,4 +42,64 @@ body {
     font-style: normal;
     font-weight: normal;
     src: url('../fonts/KalamehWeb-Regular.woff') format('woff');
+}
+
+/* Svg */
+
+#icons {
+    display: none;
+}
+
+svg {
+  width: 33px !important;
+  height: 33px !important;
+  color: var(--color-white);
+}
+
+.nav_icon {
+  width: 23px !important;
+  height: 23px !important;
+}
+
+/* Background color */
+
+.bg_orange {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+}
+
+/* Text color */
+
+.text_orange {
+    color: var(--color-orange);
+}
+
+/* Transition */
+
+.button {
+  transition: all 150ms ease-in;
+}
+
+svg {
+  transition: all 150ms ease-in;
+}
+
+/* Button */
+
+.button,
+svg {
+  transition: all 150ms ease-in;
+}
+
+.button:hover {
+  color: var(--color-orange);
+  background-color: inherit;
+  border: 1px solid var(--color-white);
+  transform: scale(1.05);
+}
+
+.button:hover svg,
+a svg:hover {
+  color: var(--color-orange);
+  transform: scale(1.1);
 }
