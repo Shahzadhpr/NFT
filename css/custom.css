@@ -61,6 +61,29 @@ svg {
   height: 23px !important;
 }
 
+/* Input */
+
+input::placeholder {
+  color: #6c757d !important;
+  opacity: 1;
+}
+
+/* Form */
+
+.form-control:focus {
+  background: inherit !important;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: var(--color-white);
+}
+
+/* Padding */
+
+.p_14 {
+    padding: 14.8px;
+}
+
 /* Background color */
 
 .bg_orange {
@@ -77,11 +100,21 @@ svg {
 /* Transition */
 
 .button {
-  transition: all 150ms ease-in;
+  transition: all 80ms ease-in;
 }
 
 svg {
-  transition: all 150ms ease-in;
+  transition: all 80ms ease-in;
+}
+
+/* Gradient */
+
+.bg_gradient{
+    background-image: linear-gradient(to right, #7011AD, #BC0505, #FC630F);
+}
+
+.hover_gradient:hover {
+    background-image: linear-gradient(to left, #7011AD, #BC0505, #FC630F);
 }
 
 /* Button */
@@ -102,4 +135,42 @@ svg {
 a svg:hover {
   color: var(--color-orange);
   transform: scale(1.1);
+}
+
+/* Ship */
+
+header::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: radial-gradient(circle, #3D0D58 0%, #070F1C 100%);
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.4;
+    right: -75px;
+    top: -95px;
+    z-index: -1;
+}
+
+/* Header */
+
+.title_header {
+
+}
+
+.title_text {
+
+}
+
+.title_coption.title_text {
+
+}
+
+/* Background inherit*/
+
+.bg_inherit {
+    background: inherit;
+    border: none;
+    outline: none;
 }

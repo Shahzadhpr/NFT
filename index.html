@@ -26,11 +26,14 @@
         <symbol id="search" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12.5 21.75C18.15 21.75 22.75 17.15 22.75 11.5C22.75 5.85 18.15 1.25 12.5 1.25C6.85 1.25 2.25 5.85 2.25 11.5C2.25 17.15 6.85 21.75 12.5 21.75ZM12.5 2.75C17.33 2.75 21.25 6.68 21.25 11.5C21.25 16.32 17.33 20.25 12.5 20.25C7.67 20.25 3.75 16.32 3.75 11.5C3.75 6.68 7.67 2.75 12.5 2.75ZM2 22.751C2.19 22.751 2.38 22.681 2.53 22.531L4.53 20.531C4.66948 20.3899 4.7477 20.1994 4.7477 20.001C4.7477 19.8026 4.66948 19.6121 4.53 19.471C4.24 19.181 3.76 19.181 3.47 19.471L1.47 21.471C1.18 21.761 1.18 22.241 1.47 22.531C1.62 22.681 1.81 22.751 2 22.751Z" fill="white"/>
         </symbol>
+        <symbol id="search-input" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.3334 29C7.80008 29 1.66675 22.8667 1.66675 15.3334C1.66675 7.80002 7.80008 1.66669 15.3334 1.66669C22.8668 1.66669 29.0001 7.80002 29.0001 15.3334C29.0001 22.8667 22.8668 29 15.3334 29ZM15.3334 3.66669C8.89342 3.66669 3.66675 8.90669 3.66675 15.3334C3.66675 21.76 8.89342 27 15.3334 27C21.7734 27 27.0001 21.76 27.0001 15.3334C27.0001 8.90669 21.7734 3.66669 15.3334 3.66669ZM29.3334 30.3347C29.0801 30.3347 28.8267 30.2414 28.6268 30.0414L25.9601 27.3747C25.7741 27.1865 25.6698 26.9326 25.6698 26.668C25.6698 26.4034 25.7741 26.1495 25.9601 25.9614C26.3468 25.5747 26.9868 25.5747 27.3734 25.9614L30.0401 28.628C30.4268 29.0147 30.4268 29.6547 30.0401 30.0414C29.8401 30.2414 29.5868 30.3347 29.3334 30.3347Z" fill="white" fill-opacity="0.5"/>
+        </symbol>
     </svg>
 
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top mt-lg-4 mt-2">
+        <nav class="navbar navbar-expand-lg mt-lg-4 mt-2">
             <div class="container">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -75,7 +78,7 @@
                                   <use href="#shopping-bag"></use>
                                 </svg>
                             </a>
-                            <a href="#" type="button" class="bg_orange button fw-bold px-3 py-2 rounded-5 d-flex align-items-center gap-2 text-nowrap">
+                            <a href="#" type="button" class="bg_orange button fw-bold px-3 py-2 rounded-pill d-flex align-items-center gap-2 text-nowrap">
                               <svg>
                                 <use href="#user"></use>
                               </svg>
@@ -86,6 +89,32 @@
                 </div>
             </div>
         </nav>
+
+        <div class="container mt-5 text-light">
+            <div class="row">
+                <div class="col-7">
+                    <p class="title_text fw-light">بازار جهانی توکن‌های غیرمثلی بر بستر بلاکچین پلیگان</p>
+                    <h1 class="title_header fw-bold my-4">دنیای NFT های <span class="text_orange">شگفت انگیز</span></h1>
+                    <p class="title_coption fw-light text-secondary lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+
+                    <div class="mt-4 d-flex align-items-center gap-4">
+                        <form action="#" class="w-50 d-flex align-items-center border border-secondary rounded-pill py-2 px-3">
+                            <button class="btn p-0" type="submit">
+                                <svg>
+                                  <use href="#search-input"></use>
+                                </svg>
+                            </button>
+                            <input type="text" name="text" id="inputText" class="form-control bg_inherit fw-medium ms-2" placeholder="جستجو NFT ها و هنرمندان">
+                        </form>
+                        <a href="#" class="bg_gradient hover_gradient fw-bold text-light w-50 rounded-pill text-center p_14">دریافت مشاوره رایگان</a>
+                    </div>
+                </div>
+
+                <div class="col-5 d-flex align-items-center justify-content-center">
+                    <img src="images/header_img.png" alt="headerImages" class="w-100 object-fit-cover">
+                </div>
+            </div>
+        </div>
     </header>
 
 
