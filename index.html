@@ -32,9 +32,9 @@
     </svg>
 
     <!-- Header -->
-    <header>
+    <header class="mb-5">
         <nav class="navbar navbar-expand-lg mt-lg-4 mt-2">
-            <div class="container">
+            <div class="container-fluid container-lg">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                        <svg class="nav_icon">
@@ -90,30 +90,49 @@
             </div>
         </nav>
 
-        <div class="container mt-5 text-light">
+        <div class="container-fluid container-lg mt-5 text-light">
             <div class="row">
-                <div class="col-7">
-                    <p class="title_text fw-light">بازار جهانی توکن‌های غیرمثلی بر بستر بلاکچین پلیگان</p>
-                    <h1 class="title_header fw-bold my-4">دنیای NFT های <span class="text_orange">شگفت انگیز</span></h1>
-                    <p class="title_coption fw-light text-secondary lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                <div class="col-12 col-lg-6 align-content-center text-center text-lg-start">
+                    <p class="fw-light">بازار جهانی توکن‌های غیرمثلی بر بستر بلاکچین پلیگان</p>
+                    <h1 class="fw-bold my-4">دنیای NFT های <span class="text_orange">شگفت انگیز</span></h1>
 
-                    <div class="mt-4 d-flex align-items-center gap-4">
-                        <form action="#" class="w-50 d-flex align-items-center border border-secondary rounded-pill py-2 px-3">
-                            <button class="btn p-0" type="submit">
-                                <svg>
-                                  <use href="#search-input"></use>
+                    <div class="d-lg-none main_img_header position-relative">
+                        <img src="images/header_img.png" alt="headerImages" class="w-100 object-fit-cover">
+                        <div class="count_user_site fw-bold fs-5 rounded-4 d-flex align-items-center justify-content-center gap-2">
+                            <img src="images/Group2.png" alt="CountUseSite" class="object-fit-cover text-nowrap">
+                            500+هنرمند
+                        </div>
+                    </div>
+
+                    <p class="fw-light text-secondary lh-lg">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+
+                    <div class="mt-4 d-flex align-items-center justify-content-center gap-4">
+                        <form action="#" class="w-50 d-none d-lg-flex align-items-center border border-secondary rounded-pill position-relative h-50">
+                            <button class="btn p-0 ms-3 flex-shrink-0" type="submit">
+                                <svg width="20" height="20">
+                                    <use href="#search-input"></use>
                                 </svg>
                             </button>
-                            <input type="text" name="text" id="inputText" class="form-control bg_inherit fw-medium ms-2" placeholder="جستجو NFT ها و هنرمندان">
+                            <input type="text" name="text" id="inputText" class="form-control bg_inherit fw-medium w-100 h-100 p_14 border-0" placeholder="جستجو NFT ها و هنرمندان">
                         </form>
-                        <a href="#" class="bg_gradient hover_gradient fw-bold text-light w-50 rounded-pill text-center p_14">دریافت مشاوره رایگان</a>
+                        <a href="#" class="bg_gradient hover_gradient p_14 fw-bold text-light w-50 rounded-pill text-center">دریافت مشاوره رایگان</a>
                     </div>
                 </div>
 
-                <div class="col-5 d-flex align-items-center justify-content-center">
-                    <img src="images/header_img.png" alt="headerImages" class="w-100 object-fit-cover">
+                <div class="d-none d-lg-block col-lg-6 d-flex align-items-center justify-content-center">
+                    <div class="main_img_header position-relative">
+                        <img src="images/header_img.png" alt="headerImages" class="w-100 object-fit-cover">
+                        <div class="count_user_site fw-bold fs-5 rounded-4 d-flex align-items-center justify-content-center gap-2">
+                            <img src="images/Group2.png" alt="CountUseSite" class="object-fit-cover text-nowrap">
+                            500+هنرمند
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <div class="d-none d-lg-block position-absolute top-0 end-0 z-n1">
+            <img src="images/Group1.png" alt="ship">
         </div>
     </header>
 
