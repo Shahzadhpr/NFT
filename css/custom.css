@@ -18,6 +18,28 @@
   color: var(--color-white);
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(7, 16, 29, 0.4); 
+    border-radius: 0; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(7, 16, 29, 0.6); 
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(7, 16, 29, 0.4) var(--color-dark);
+}
+
 a {
     text-decoration: none;
 }
@@ -111,6 +133,12 @@ input::placeholder {
     padding: 14.8px;
 }
 
+/* cursor pointer */
+
+.cursor_pointer {
+  cursor: pointer;
+}
+
 /* Background color */
 
 .bg_orange {
@@ -198,7 +226,7 @@ header::before {
 }
 
 .main_img_header::before {
-  background-image: url("../images/Path1.png");
+  background-image: url("../images/img-for-hdear/Path1.png");
   width: 35px;
   height: 47px;
   object-fit: cover;
@@ -207,7 +235,7 @@ header::before {
 }
 
 .main_img_header::after {
-  background-image: url("../images/Path2.png");
+  background-image: url("../images/img-for-hdear/Path2.png");
   width: 69px;
   height: 45px;
   object-fit: cover;
@@ -232,7 +260,25 @@ header::before {
   height: 43px;
 }
 
+/* Main */
 
+.icon_main {
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+}
+
+.header_container_title {
+
+}
+
+.icon_header_container {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* Responsiv css */
 
@@ -267,6 +313,11 @@ header::before {
     height: 66px;
     left: 157px;
     bottom: 91px;
+  }
+
+  .icon_header_container {
+    width: 58px;
+    height: 58px;
   }
 }
 
