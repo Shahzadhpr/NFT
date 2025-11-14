@@ -44,6 +44,10 @@ a {
     text-decoration: none;
 }
 
+img {
+  object-fit: cover;
+}
+
 body {
     font-family: kalameh;
     background-color: var(--color-dark);
@@ -268,16 +272,72 @@ header::before {
   object-fit: cover;
 }
 
-.header_container_title {
-
-}
-
 .icon_header_container {
   width: 70px;
   height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.wallet_box_1{
+  background-image: linear-gradient(to right bottom,var(--color-dark),#FC280C);
+}
+
+.wallet_box_2{
+  background-image: linear-gradient(to right bottom,var(--color-dark),#00D1FF);
+}
+
+.wallet_box_3{
+  background-image: linear-gradient(to right bottom,var(--color-dark),#760AFF);
+}
+
+.wallet_box_4{
+  background-image: linear-gradient(to right bottom,var(--color-dark),#FE007A);
+}
+
+.wallet_box_5{
+  background-image: linear-gradient(to right bottom,var(--color-dark),#FFBB0D);
+}
+
+.wallet_box_1::after{
+  border-top: 1px solid #FC280C;
+}
+
+.wallet_box_2::after{
+  border-top: 1px solid #00D1FF;
+}
+
+.wallet_box_3::after{
+  border-top: 1px solid #760AFF;
+}
+
+.wallet_box_4::after{
+  border-top: 1px solid #FE007A;
+}
+
+.wallet_box_5::after{
+  border-top: 1px solid #FFBB0D;
+}
+
+.wallet_box{
+  padding: 1px;
+  height: 188px;
+}
+
+.wallet_box > div{
+  background-color: #161E2A;
+}
+
+.wallet_box::after{
+  content: '';
+  width: 47px;
+  height: 23px;
+  background-color: var(--color-dark);
+  position: absolute;
+  right: -14px;
+  bottom: -3px;
+  transform: rotate(-43deg);
 }
 
 /* Responsiv css */
