@@ -1,23 +1,36 @@
+/* -------------------------------------------------------------------
+   Global Reset
+------------------------------------------------------------------- */
 *,
 *::after,
+*::before,
 *::backdrop {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* -------------------------------------------------------------------
+   Root Variables
+------------------------------------------------------------------- */
 :root {
     --color-orange: #FF3C00;
     --color-dark: #07101D;
     --color-white: #fff;
 }
 
-::selection{
-  background-color: rgba(255, 255, 255, 0.11);
-  backdrop-filter: blur(4px);
-  color: var(--color-white);
+/* -------------------------------------------------------------------
+   Text Selection Styling
+------------------------------------------------------------------- */
+::selection {
+    background-color: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(4px);
+    color: var(--color-white);
 }
 
+/* -------------------------------------------------------------------
+   Scrollbar Styling
+------------------------------------------------------------------- */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -27,25 +40,28 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(7, 16, 29, 0.4); 
-    border-radius: 0; 
+    background-color: rgba(7, 16, 29, 0.4);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(7, 16, 29, 0.6); 
+    background-color: rgba(7, 16, 29, 0.6);
 }
 
+/* Firefox scrollbar */
 * {
     scrollbar-width: thin;
     scrollbar-color: rgba(7, 16, 29, 0.4) var(--color-dark);
 }
 
+/* -------------------------------------------------------------------
+   Base Elements
+------------------------------------------------------------------- */
 a {
     text-decoration: none;
 }
 
 img {
-  object-fit: cover;
+    object-fit: cover;
 }
 
 body {
@@ -53,122 +69,131 @@ body {
     background-color: var(--color-dark);
 }
 
-/* Fonts */
-
+/* -------------------------------------------------------------------
+   Fonts
+------------------------------------------------------------------- */
 @font-face {
     font-family: kalameh;
-    font-style: normal;
     font-weight: 900;
     src: url('../fonts/KalamehWeb-Black.woff') format('woff');
 }
 
 @font-face {
     font-family: kalameh;
-    font-style: normal;
     font-weight: bold;
     src: url('../fonts/KalamehWeb-Bold.woff') format('woff');
 }
 
 @font-face {
     font-family: kalameh;
-    font-style: normal;
     font-weight: normal;
     src: url('../fonts/KalamehWeb-Regular.woff') format('woff');
 }
 
+/* FaNum versions */
 @font-face {
     font-family: kalameh;
-    font-style: normal;
     font-weight: 900;
-    src: url('../fonts/KalamehWeb\(FaNum\)-Black.woff') format('woff');
+    src: url('../fonts/KalamehWeb(FaNum)-Black.woff') format('woff');
 }
 
 @font-face {
     font-family: kalameh;
-    font-style: normal;
     font-weight: bold;
-    src: url('../fonts/KalamehWeb\(FaNum\)-Bold.woff') format('woff');
+    src: url('../fonts/KalamehWeb(FaNum)-Bold.woff') format('woff');
 }
 
 @font-face {
     font-family: kalameh;
-    font-style: normal;
     font-weight: normal;
-    src: url('../fonts/KalamehWeb\(FaNum\)-Regular.woff') format('woff');
+    src: url('../fonts/KalamehWeb(FaNum)-Regular.woff') format('woff');
 }
 
-/* Svg */
-
+/* -------------------------------------------------------------------
+   SVG Icon Styling
+------------------------------------------------------------------- */
 #icons {
     display: none;
 }
 
 svg {
-  width: 33px !important;
-  height: 33px !important;
-  color: var(--color-white);
+    width: 33px !important;
+    height: 33px !important;
+    color: var(--color-white);
+    transition: all 150ms ease-in;
 }
 
 .nav_icon {
-  width: 23px !important;
-  height: 23px !important;
+    width: 23px !important;
+    height: 23px !important;
 }
 
-/* Input */
-
+/* -------------------------------------------------------------------
+   Input Styling
+------------------------------------------------------------------- */
 input::placeholder {
-  color: #6c757d !important;
-  opacity: 1;
+    color: #6c757d !important;
+    opacity: 1;
 }
-
-/* Form */
 
 .form-control:focus {
-  background: inherit !important;
-  outline: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  color: var(--color-white);
+    background: inherit !important;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: var(--color-white);
 }
 
-/* Padding */
-
+/* -------------------------------------------------------------------
+   Utility Classes
+------------------------------------------------------------------- */
 .p_14 {
     padding: 14.8px;
 }
 
-/* cursor pointer */
-
 .cursor_pointer {
-  cursor: pointer;
+    cursor: pointer;
 }
-
-/* Background color */
 
 .bg_orange {
     background-color: var(--color-orange);
     color: var(--color-white);
 }
 
-/* Text color */
-
 .text_orange {
     color: var(--color-orange);
 }
 
-/* Transition */
+.bg_inherit {
+    background: inherit;
+    border: none;
+    outline: none;
+}
 
+/* -------------------------------------------------------------------
+   Buttons & Icon Hover Effects
+------------------------------------------------------------------- */
 .button {
-  transition: all 80ms ease-in;
+    transition: all 150ms ease-in;
 }
 
-svg {
-  transition: all 80ms ease-in;
+.button:hover {
+    color: var(--color-orange);
+    background-color: inherit;
+    border: 1px solid var(--color-white);
+    transform: scale(1.05);
 }
 
-/* Gradient */
+.button:hover svg,
+a svg:hover {
+    color: var(--color-orange);
+    transform: scale(1.1);
+}
 
-.bg_gradient{
+/* -------------------------------------------------------------------
+   Gradient Background Utilities
+------------------------------------------------------------------- */
+.bg_gradient {
     background-image: linear-gradient(to right, #7011AD, #BC0505, #FC630F);
 }
 
@@ -176,28 +201,9 @@ svg {
     background-image: linear-gradient(to left, #7011AD, #BC0505, #FC630F);
 }
 
-/* Button */
-
-.button,
-svg {
-  transition: all 150ms ease-in;
-}
-
-.button:hover {
-  color: var(--color-orange);
-  background-color: inherit;
-  border: 1px solid var(--color-white);
-  transform: scale(1.05);
-}
-
-.button:hover svg,
-a svg:hover {
-  color: var(--color-orange);
-  transform: scale(1.1);
-}
-
-/* Ship */
-
+/* -------------------------------------------------------------------
+   Header Glow Background Decoration
+------------------------------------------------------------------- */
 header::before {
     content: "";
     position: absolute;
@@ -212,180 +218,180 @@ header::before {
     z-index: -1;
 }
 
-/* Background inherit*/
-
-.bg_inherit {
-    background: inherit;
-    border: none;
-    outline: none;
-}
-
-/* Header */
-
+/* -------------------------------------------------------------------
+   Header Decorative Images
+------------------------------------------------------------------- */
 .main_img_header::before,
 .main_img_header::after {
-  content: '';
-  background-repeat: no-repeat;
-  position: absolute;
+    content: '';
+    background-repeat: no-repeat;
+    position: absolute;
 }
 
 .main_img_header::before {
-  background-image: url("../images/img-for-hdear/Path1.png");
-  width: 35px;
-  height: 47px;
-  object-fit: cover;
-  top: 8rem;
-  right: 9rem;
+    background-image: url("../images/img-for-hdear/Path1.png");
+    width: 35px;
+    height: 47px;
+    top: 8rem;
+    right: 9rem;
 }
 
 .main_img_header::after {
-  background-image: url("../images/img-for-hdear/Path2.png");
-  width: 69px;
-  height: 45px;
-  object-fit: cover;
-  bottom: 6rem;
-  left: 1rem;
+    background-image: url("../images/img-for-hdear/Path2.png");
+    width: 69px;
+    height: 45px;
+    bottom: 6rem;
+    left: 1rem;
 }
 
+/* -------------------------------------------------------------------
+   User Counter Container
+------------------------------------------------------------------- */
 .count_user_site {
-  width: 252px;
-  height: 75px;
-  background-color: rgba(255, 255, 255, 0.11);
-  backdrop-filter: blur(5px);
-  position: absolute;
-  content: "";
-  left: 198px;
-  bottom: 98px;
-  user-select: none;
+    width: 252px;
+    height: 75px;
+    background-color: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    left: 198px;
+    bottom: 98px;
+    user-select: none;
 }
 
 .count_user_site img {
-  width: 103px;
-  height: 43px;
+    width: 103px;
+    height: 43px;
 }
 
-/* Main */
-
+/* -------------------------------------------------------------------
+   Main Icons
+------------------------------------------------------------------- */
 .icon_main {
-  width: 38px;
-  height: 38px;
-  object-fit: cover;
+    width: 38px;
+    height: 38px;
 }
 
 .icon_header_container {
-  width: 70px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.wallet_box_1{
-  background-image: linear-gradient(to right bottom,var(--color-dark),#FC280C);
+/* -------------------------------------------------------------------
+   Wallet Boxes (Crypto Wallet Cards)
+------------------------------------------------------------------- */
+.wallet_box {
+    padding: 1px;
+    height: 188px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
 }
 
-.wallet_box_2{
-  background-image: linear-gradient(to right bottom,var(--color-dark),#00D1FF);
+.wallet_box > div {
+    background-color: #161E2A;
 }
 
-.wallet_box_3{
-  background-image: linear-gradient(to right bottom,var(--color-dark),#760AFF);
+/* Corner ribbon shape */
+.wallet_box::after {
+    content: '';
+    width: 47px;
+    height: 23px;
+    background-color: var(--color-dark);
+    position: absolute;
+    right: -14px;
+    bottom: -3px;
+    transform: rotate(-43deg);
 }
 
-.wallet_box_4{
-  background-image: linear-gradient(to right bottom,var(--color-dark),#FE007A);
+/* Hover effects */
+.wallet_box:hover {
+    transform: translateY(-8px) scale(1.03);
 }
 
-.wallet_box_5{
-  background-image: linear-gradient(to right bottom,var(--color-dark),#FFBB0D);
+.wallet_box img {
+    transition: transform 0.4s ease;
 }
 
-.wallet_box_1::after{
-  border-top: 1px solid #FC280C;
+.wallet_box:hover img {
+    transform: scale(1.1) rotate(3deg);
 }
 
-.wallet_box_2::after{
-  border-top: 1px solid #00D1FF;
+.wallet_box:hover span {
+    color: var(--color-white);
+    letter-spacing: 0.5px;
 }
 
-.wallet_box_3::after{
-  border-top: 1px solid #760AFF;
+/* -------------------------------------------------------------------
+   Wallet Card Color Themes (Using simple gradient)
+------------------------------------------------------------------- */
+.wallet_box_1 { --wallet-color: #FC280C; }
+.wallet_box_2 { --wallet-color: #00D1FF; }
+.wallet_box_3 { --wallet-color: #760AFF; }
+.wallet_box_4 { --wallet-color: #FE007A; }
+.wallet_box_5 { --wallet-color: #FFBB0D; }
+.wallet_box_6 { --wallet-color: #00FF7B; }
+
+/* Apply gradient & border color dynamically */
+.wallet_box_1,
+.wallet_box_2,
+.wallet_box_3,
+.wallet_box_4,
+.wallet_box_5,
+.wallet_box_6 {
+    background-image: linear-gradient(to right bottom, var(--color-dark), var(--wallet-color));
 }
 
-.wallet_box_4::after{
-  border-top: 1px solid #FE007A;
+.wallet_box_1::after,
+.wallet_box_2::after,
+.wallet_box_3::after,
+.wallet_box_4::after,
+.wallet_box_5::after,
+.wallet_box_6::after {
+    border-top: 1px solid var(--wallet-color);
 }
 
-.wallet_box_5::after{
-  border-top: 1px solid #FFBB0D;
+/* -------------------------------------------------------------------
+   Responsive Rules
+------------------------------------------------------------------- */
+@media screen and (max-width: 991.98px) {
+    header::before {
+        width: 30%;
+        height: 40%;
+        right: 70%;
+        top: 0;
+    }
 }
 
-.wallet_box{
-  padding: 1px;
-  height: 188px;
+@media screen and (max-width: 600px) {
+    .main_img_header::before {
+        top: 6rem;
+        right: 2rem;
+    }
+
+    .main_img_header::after {
+        bottom: 3rem;
+        left: 1rem;
+    }
+
+    .count_user_site {
+        width: 229px;
+        height: 66px;
+        left: 157px;
+        bottom: 91px;
+    }
+
+    .icon_header_container {
+        width: 58px;
+        height: 58px;
+    }
 }
 
-.wallet_box > div{
-  background-color: #161E2A;
-}
-
-.wallet_box::after{
-  content: '';
-  width: 47px;
-  height: 23px;
-  background-color: var(--color-dark);
-  position: absolute;
-  right: -14px;
-  bottom: -3px;
-  transform: rotate(-43deg);
-}
-
-/* Responsiv css */
-
-@media screen and (max-width:991.98px) {
-  header::before {
-      width: 30%;
-      height: 40%;
-      right: 70%;
-      top: 0;
-  }
-}
-
-@media screen and (max-width:600px) {
-  .main_img_header::before {
-    width: 35px;
-    height: 47px;
-    object-fit: cover;
-    top: 6rem;
-    right: 2rem;
-  }
-
-  .main_img_header::after {
-    width: 69px;
-    height: 45px;
-    object-fit: cover;
-    bottom: 3rem;
-    left: 1rem;
-  }
-
-  .count_user_site {
-    width: 229px;
-    height: 66px;
-    left: 157px;
-    bottom: 91px;
-  }
-
-  .icon_header_container {
-    width: 58px;
-    height: 58px;
-  }
-}
-
-@media screen and (max-width:400px) {
-  .count_user_site {
-    width: 229px;
-    height: 66px;
-    left: 100px;
-    bottom: 43px;
-  }
+@media screen and (max-width: 400px) {
+    .count_user_site {
+        left: 100px;
+        bottom: 43px;
+    }
 }
