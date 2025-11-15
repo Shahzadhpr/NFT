@@ -8,7 +8,7 @@ The main goal is to provide an optimized platform for artists and users to view,
 
 ## 🔗 Project Link
 
-[![Iran NFT – Project](https://img.shields.io/badge/Iran%20NFT-Project-f97316?style=for-the-badge&labelColor=1a2a40&logoColor=white)](https://shahzadhpr.github.io/Blob-Maker)
+[![Iran NFT – Project](https://img.shields.io/badge/Iran%20NFT-Project-f97316?style=for-the-badge&labelColor=1a2a40&logoColor=white)](https://shahzadhpr.github.io/NFT)
 
 You can check out the **live preview** of the project by clicking the badge above.  
 
