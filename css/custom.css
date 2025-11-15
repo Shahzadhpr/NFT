@@ -341,7 +341,7 @@ header::before {
 }
 
 /* Corner ribbon shape */
-.wallet_box::after {
+/* .wallet_box::after {
     content: '';
     width: 47px;
     height: 23px;
@@ -350,7 +350,7 @@ header::before {
     right: -14px;
     bottom: -3px;
     transform: rotate(-43deg);
-}
+} */
 
 /* Hover effects */
 .wallet_box:hover {
@@ -424,7 +424,7 @@ header::before {
     font-family: Gilroy_Bold;
 }
 
-.shape_1{
+/* .shape_1{
     width: 60%;
     height: 70%;
     border-radius: 100%;
@@ -434,7 +434,7 @@ header::before {
     z-index: -1;
     filter: blur(50px);
     background: radial-gradient(62.37% 62.37% at 50.00% 50.00%, rgba(8, 164, 117, 0.10) 28.57%, rgba(7, 15, 28, 0.00) 100%);
-}
+} */
 
 .box_features {
     height: 220px;
@@ -484,7 +484,7 @@ header::before {
     height: 215px;
 }
 
-.shape_2 {
+/* .shape_2 {
     width: 50%;
     height: 80%;
     border-radius: 100%;
@@ -494,7 +494,7 @@ header::before {
     z-index: -1;
     filter: blur(60px);
     background: radial-gradient(62.37% 62.37% at 50.00% 50.00%, rgba(89, 9, 95, 0.2) 37.62%, rgba(7, 15, 28, 0.00) 100%);
-}
+} */
 
 /* -------------------------------------------------------------------
     Top Creators
@@ -511,6 +511,80 @@ header::before {
     width: 109px;
     flex-shrink: 0;
 }
+
+/* -------------------------------------------------------------------
+    newsletter
+------------------------------------------------------------------- */
+.bg_07101D {
+    background-color: #07101D !important;
+}
+
+.section_news_letters {
+    background: linear-gradient(90deg, #A50E86 0.16%, #C10B70 24.02%, #E83947 38.73%, #DF330D 55.88%, #C55212 81.05%, #D37506 100%);
+    height: 324px;
+    border-radius: 2rem !important; 
+    overflow: hidden !important;     
+    position: relative;
+}
+
+/* .section_news_letters::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../img/Group 122 (1).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.section_news_letters::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../img/Group 123 (1).png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: -10rem;
+    bottom: -7rem;
+    z-index: 1;
+} */
+
+.cover_bg_news_letters {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 149px rgba(255,255,255,0.6);
+    border-radius: inherit !important;
+    position: relative;
+    z-index: 2; 
+}
+
+/* -------------------------------------------------------------------
+   Footer
+------------------------------------------------------------------- */
+footer{
+    background-color: #091028;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.icon_footer_link{
+    background-color: rgba(255, 255, 255, 0.10);
+    width: 52px;
+    height: 52px;
+}
+
+.icon_footer_instagram{
+    background: linear-gradient(90deg, #9A5BFF 0%, #FF1212 53.12%, #FF7F56 100%) !important;
+}
+
+/* .shape_3{
+    filter: blur(50px);
+    top: -11%;
+    right: -12%;
+    width: 615px;
+    height: 584px;
+    background: radial-gradient(62.37% 62.37% at 50% 50%, rgba(8, 52, 164, 0.20) 21.7%, rgba(7, 15, 28, 0.00) 100%);
+    -webkit-filter: blur(50px);
+} */
 
 /* -------------------------------------------------------------------
    Responsive
