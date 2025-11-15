@@ -109,6 +109,13 @@ body {
     src: url('../fonts/KalamehWeb(FaNum)-Regular.woff') format('woff');
 }
 
+@font-face {
+    font-family: Gilroy_Bold;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/Gilroy-Bold.woff') format('woff');
+}
+
 /* -------------------------------------------------------------------
    SVG Icon Styling
 ------------------------------------------------------------------- */
@@ -130,7 +137,7 @@ svg {
 
 .speed_icon {
     width: 42px !important;
-    height: 112px !important;
+    height: 47px !important;
 }
 
 .security_icon {
@@ -164,6 +171,14 @@ input::placeholder {
 ------------------------------------------------------------------- */
 .p_14 {
     padding: 14.8px;
+}
+
+.margin_top {
+    margin-top: 7rem;
+}
+
+.margin_bottom {
+    margin-bottom: 10rem;
 }
 
 .cursor_pointer {
@@ -410,8 +425,46 @@ header::before {
     background: radial-gradient(62.37% 62.37% at 50.00% 50.00%, rgba(8, 164, 117, 0.10) 28.57%, rgba(7, 15, 28, 0.00) 100%);
 }
 
+.box_features {
+    height: 220px;
+}
+
+.box_features_1 {
+    border: 1px solid #00FF1A;
+    background: linear-gradient(107deg, rgba(0, 255, 26, 0.10), rgba(255, 255, 255, 0.10));
+}
+
+.box_features_2 {
+    border: 1px solid #5300FF;
+    background: linear-gradient(107deg, rgba(83, 0, 255, 0.10), rgba(255, 255, 255, 0.10));
+}
+
+.box_features_3 {
+    border: 1px solid #FF1F00;
+    background: linear-gradient(107deg, rgba(255, 31, 0, 0.10), rgba(255, 255, 255, 0.10));
+}
+
+.box_features_icon {
+    width: 82px;
+    height: 82px;
+    padding: 12px 0 12px 0;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(25px);
+    position: absolute;
+    top: -40px;
+}
+
 /* -------------------------------------------------------------------
-   Responsive Rules
+    Trends
+------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------
+    Top Creators
+------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------
+   Responsive
 ------------------------------------------------------------------- */
 @media screen and (max-width: 991.98px) {
     header::before {
