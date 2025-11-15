@@ -17,13 +17,16 @@
     --color-orange: #FF3C00;
     --color-dark: #07101D;
     --color-white: #fff;
+    --color-rgba-08: rgba(255, 255, 255, 0.08);
+    --color-rgba-10: rgba(255, 255, 255, 0.10);
+    --color-rgba-11: rgba(255, 255, 255, 0.11);
 }
 
 /* -------------------------------------------------------------------
    Text Selection Styling
 ------------------------------------------------------------------- */
 ::selection {
-    background-color: rgba(255, 255, 255, 0.11);
+    background-color: var(--color-rgba-11);
     backdrop-filter: blur(4px);
     color: var(--color-white);
 }
@@ -147,11 +150,15 @@ svg {
 
 .support_icon {
     width: 46px !important;
-    height: 34px !important;
+    height: 47px !important;
 }
 
 .EHT_icon {
     width: 30px !important;
+}
+
+.stars_icon {
+    width: 78px !important;
 }
 
 /* -------------------------------------------------------------------
@@ -205,7 +212,7 @@ input::placeholder {
 }
 
 .bg_blur{
-    background-color: rgba(255, 255, 255, 0.10);
+    background-color: var(--color-rgba-10);
     backdrop-filter: blur(10px);
 }
 
@@ -289,7 +296,7 @@ header::before {
 .count_user_site {
     width: 252px;
     height: 75px;
-    background-color: rgba(255, 255, 255, 0.11);
+    background-color: var(--color-rgba-11);
     backdrop-filter: blur(5px);
     position: absolute;
     left: 198px;
@@ -396,7 +403,7 @@ header::before {
    Hot bids 
 ------------------------------------------------------------------- */
 .box_hot_bids{
-    background-color: rgba(255, 255, 255, 0.10);
+    background-color: var(--color-rgba-10);
 }
 
 .img_hot_bids > div{
@@ -435,17 +442,17 @@ header::before {
 
 .box_features_1 {
     border: 1px solid #00FF1A;
-    background: linear-gradient(107deg, rgba(0, 255, 26, 0.10), rgba(255, 255, 255, 0.10));
+    background: linear-gradient(107deg, rgba(0, 255, 26, 0.10), var(--color-rgba-10));
 }
 
 .box_features_2 {
     border: 1px solid #5300FF;
-    background: linear-gradient(107deg, rgba(83, 0, 255, 0.10), rgba(255, 255, 255, 0.10));
+    background: linear-gradient(107deg, rgba(83, 0, 255, 0.10), var(--color-rgba-10));
 }
 
 .box_features_3 {
     border: 1px solid #FF1F00;
-    background: linear-gradient(107deg, rgba(255, 31, 0, 0.10), rgba(255, 255, 255, 0.10));
+    background: linear-gradient(107deg, rgba(255, 31, 0, 0.10), var(--color-rgba-10));
 }
 
 .box_features_icon {
@@ -453,7 +460,7 @@ header::before {
     height: 82px;
     padding: 12px 0 12px 0;
     border: 1px solid rgba(255, 255, 255, 0.5);
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--color-rgba-08);
     backdrop-filter: blur(25px);
     position: absolute;
     top: -40px;
@@ -478,10 +485,11 @@ header::before {
 }
 
 .shape_2 {
-    width: 68%;
+    width: 50%;
     height: 80%;
     border-radius: 100%;
     position: absolute;
+    right: 157px;
     top: 2800px;
     z-index: -1;
     filter: blur(60px);
@@ -491,6 +499,18 @@ header::before {
 /* -------------------------------------------------------------------
     Top Creators
 ------------------------------------------------------------------- */
+.box_creators {
+    height: 182px;
+    width: 100%; 
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.img_box_creators {
+    height: 109px;
+    width: 109px;
+    flex-shrink: 0;
+}
 
 /* -------------------------------------------------------------------
    Responsive
