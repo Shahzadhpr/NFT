@@ -1,5 +1,4 @@
-The project is currently under development — check it out, follow the progress, and share your feedback! 🚧💬
-<!--# 🌐 Iran NFT – Persian NFT Web Project
+# 🌐 Iran NFT – Persian NFT Web Project
 
 **Iran NFT** is a fully Persian, right-to-left (RTL) **Front-End** project built with **Bootstrap 5**.  
 It is designed to showcase and promote NFT artworks in a modern, minimal, and responsive web interface.  
@@ -60,10 +59,6 @@ Simply open the index.html file
 
 &nbsp;
 
-📁 Folder Structure
-
-&nbsp;
-
 ## ⭐ Support the Project
 
 If you like this project, please **give it a star ⭐ on GitHub** — it really helps!
@@ -96,4 +91,4 @@ Feel free to **follow me on LinkedIn**, **message me on Telegram**, or **drop me
 
 This project is licensed under the **MIT License**.
 
-You are free to use, modify, and distribute it for any purpose. -->
+You are free to use, modify, and distribute it for any purpose.
